@@ -1,0 +1,11 @@
+url: "https://cho1hojin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Hojin Choi" # the name of your site, e.g. ACME Corp.
+description: "최호진"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false

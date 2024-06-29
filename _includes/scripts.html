@@ -1,0 +1,49 @@
+<script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
+<script>
+  (function () {
+    function isDarkTheme() {
+      var stored = localStorage.getItem("theme");
+      if (stored === "dark") return true;
+      if (stored === "light") return false;
+      if (document.documentElement.getAttribute("data-theme") === "dark") return true;
+      return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    }
+
+    function syncSidebarThemeIcon() {
+      var icon = document.getElementById("sidebar-theme-icon");
+      if (!icon) return;
+      if (isDarkTheme()) {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+      } else {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+      }
+    }
+
+    function setupSidebarThemeToggle() {
+      var btn = document.getElementById("sidebar-theme-toggle");
+      if (!btn) return;
+
+      syncSidebarThemeIcon();
+
+      btn.addEventListener("click", function () {
+        var dark = isDarkTheme();
+        var next = dark ? "light" : "dark";
+
+        localStorage.setItem("theme", next);
+        if (next === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+          document.documentElement.removeAttribute("data-theme");
+        }
+        syncSidebarThemeIcon();
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", setupSidebarThemeToggle);
+    window.addEventListener("pageshow", syncSidebarThemeIcon);
+  })();
+</script>
+
+{% include analytics.html %}
