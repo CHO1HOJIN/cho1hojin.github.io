@@ -1,0 +1,53 @@
+name: "Hojin Choi"
+name_korean: "최호진"
+
+title: "Incoming Ph.D. student at the University of Maryland, College Park"
+
+photo: "/images/hojin.png"
+
+email: "hojinchoi.2001@gmail.com"
+location: "Seoul, Korea"
+
+social:
+  - icon: "ai ai-google-scholar"
+    url: "https://scholar.google.com"
+    title: "Google Scholar"
+  - icon: "fab fa-linkedin"
+    url: "https://www.linkedin.com/in/hojin-choi-b02652309"
+    title: "LinkedIn"
+  - icon: "fab fa-github"
+    url: "https://github.com/cho1hojin"
+    title: "GitHub"
+
+typing_lines:
+  - "Hello! I'm Hojin, an incoming Ph.D. student at the University of Maryland,
+  College Park."
+  - "I want to build a secure and reliable software ecosystem by developing
+  automated testing and repair"
+
+bio: "I recently received my B.S. in Computer Science and Engineering from
+<strong>Sogang University</strong>, Seoul, Korea (Mar. 2020 – Feb. 2026),
+graduating <em>Summa Cum Laude</em> (3rd out of 73). <br><br>
+
+I conducted research at the <a href=\"https://islab-sogang.github.io/\">Information Security Lab</a> under the
+supervision of Prof. Jaeseung Choi. My research focuses on <strong>program
+analysis</strong> and <strong>software security</strong>, with a particular
+interest in automated testing and repair techniques for smart contracts."
+
+interests:
+  - "Program Analysis"
+  - "Software Security"
+
+trajectory:
+  - img: "/images/umd.png"
+    name: "University of Maryland, College Park"
+    role: "Ph.D. student, Computer Science · 2026–"
+  - img: "/images/sogang.png"
+    name: "Sogang University"
+    role: "B.S., Computer Science · 2020 - 2026"
+
+awards:
+  - name: "Summa Cum Laude"
+    detail: "Sogang University · 2026"
+  - name: "Dean's List"
+    detail: "Sogang University · 2023"

@@ -1,0 +1,35 @@
+{% include base_path %}
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <a class="masthead__brand" href="{{ base_path }}/">{{ site.title }}</a>
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><span class="navicon"></span></button>
+        <ul class="visible-links">
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            {% assign is_active = false %}
+            {% if link.url == '/' and page.url == '/' %}
+              {% assign is_active = true %}
+            {% elsif link.url contains '#' and page.url == '/' %}
+              {% assign is_active = false %}
+            {% elsif link.url != '/' and page.url contains link.url %}
+              {% assign is_active = true %}
+            {% endif %}
+            <li class="masthead__menu-item {% if is_active %}selected{% endif %}">
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+    <button id="theme-toggle" class="masthead__theme-toggle" type="button" aria-label="Toggle theme">
+      <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i>
+    </button>
+  </div>
+</div>
