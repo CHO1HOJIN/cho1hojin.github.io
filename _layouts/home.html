@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<div class="row g-5 mb-5">
+    <div class="col-md-5">
+        <h3 class="fw-bold">Bio</h3>
+            <img src="{{ site.github.url }}/assets/img/hojinchoi.jpg" alt="Home" width = "80%">
+        </div>
+        
+        <div class="col-md-7">
+        <br><br>
+        <p>
+          Hello, my name is Hojin Choi and I am currently a undergraduate student in the computer science & engineering department at Sogang University. 
+          My research focus is on Software security, with a particular interest in fuzz testing and static analysis. 
+        </p>
+        <p>My goal as a researcher is to advance the field of software security so that more programs can be made secure.
+          I am excited to continue exploring this area of study and making a positive impact on the field.</p>
+        <p> Email : kaler1234@u.sogang.ac.kr</p>
+          
+        </div>
+</div>
+
+<!--
+<div class="row g-5 mb-5">
+  <div class="col-md-6">
+    <h3 class="fw-bold">Research</h3>
+    {{ content }}
+  </div>
+  <div class="col-md-6">
+    <img src="{{ site.github.url }}/assets/img/home.jpg" alt="Home" width="100%">
+  </div>
+</div>
+-->
+
+{% include education.html %}
+
+<!--
+<div class="row g-5 mb-5">
+  <div class="col-md-12">
+    <h3 class="fw-bold border-bottom pb-3 mb-5">News</h3>
+    {% for post in site.posts %}
+      <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
+    {% endfor %}
+  </div>
+</div>
+-->

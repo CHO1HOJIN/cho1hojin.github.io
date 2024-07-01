@@ -1,0 +1,17 @@
+menu:
+- {name: 'Research', url: '/research'}
+- {name: 'Publications', url: '/publications'}
+- {name: 'CV', url: '/cv/cv.pdf'}
+#- {name: 'Backgrounds', url: '/backgrounds'}
+- {name: 'Blogs', url: '/blogs'}
+
+research:
+
+publications:
+
+social:
+- {icon: 'github', link: 'https://github.com/cho1hojin'}
+# - {icon: 'linkedin', link: 'https://linkedin.com/in/bulelion37/'}
+
+# academic:
+# - {icon: 'scholar', link: 'https://scholar.google.com/citations?view_op=list_works&hl=ko&authuser=1&user=xp3ZJPgAAAAJ'}
