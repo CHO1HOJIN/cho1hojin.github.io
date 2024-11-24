@@ -1,0 +1,5 @@
+featured:
+  - {name: 'The Impact of Bug Oracle Implementation on the Effectiveness of Smart Contract Analysis Tools',
+      url: /publications/ksc2024.pdf,
+      description: '<b>Hojin Choi</b>, Jeongwon Park, and Jaeseung Choi <br> Korea Software Congress 2024<br>'
+  }

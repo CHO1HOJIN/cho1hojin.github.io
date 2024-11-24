@@ -2,19 +2,20 @@
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Education</h3>
     {% if page.title == "Home" %}
-      {% for item in site.data.education.featured %}
-        <p><a style="font-weight:bolder;font-size:20px"> Sogang University </a> </p>
-        <p><i> B.S. in Computer Science & EngineeringFeb.</i>
-        <span class="right-align"> Feb. 2020 - Present </span></p> 
-        </p>
-      {% endfor %}
+    {% for item in site.data.education.featured %}
+    <p><a style="font-weight:bolder;font-size:20px"> Sogang University </a> </p>
+    <p><i> B.S. in Computer Science & EngineeringFeb.</i>
+      <span class="right-align"> Feb. 2020 - Present </span>
+    </p>
+    </p>
+    {% endfor %}
     {% else %}
-      {% for item in site.data.education.index %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a>
-        <br>
-        {{item.description}}
-        </p>
-      {% endfor %}
+    {% for item in site.data.education.index %}
+    <p><a href="{{ item.url }}">{{ item.name }}</a>
+      <br>
+      {{item.description}}
+    </p>
+    {% endfor %}
     {% endif %}
   </div>
 </div>
@@ -23,16 +24,17 @@
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Research Interest</h3>
     {% if page.title == "Home" %}
-      {% for item in site.data.education.featured %}
-        <p><a style="font-weight:bolder;font-size:20px"> Software security, software testing, fuzzing, static analysis, software engineering </a> </p>
-      {% endfor %}
+    {% for item in site.data.education.featured %}
+    <p><a style="font-weight:bolder;font-size:16px"> Software security, software testing, fuzzing, static analysis,
+        program repair, software engineering </a> </p>
+    {% endfor %}
     {% else %}
-      {% for item in site.data.education.index %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a>
-        <br>
-        {{item.description}}
-        </p>
-      {% endfor %}
+    {% for item in site.data.education.index %}
+    <p><a href="{{ item.url }}">{{ item.name }}</a>
+      <br>
+      {{item.description}}
+    </p>
+    {% endfor %}
     {% endif %}
   </div>
 </div>
