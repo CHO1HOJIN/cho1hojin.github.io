@@ -22,11 +22,16 @@
 
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Research Interest</h3>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Research Interests</h3>
     {% if page.title == "Home" %}
     {% for item in site.data.education.featured %}
-    <p><a style="font-weight:bolder;font-size:16px"> A wide range of topics in software engineering and software security,
-      including software testing, fuzzing and static analysis. </a> </p>
+    <p><a style="font-size:16px">
+      I have interests across a wide range of topics in software engineering and security, including but not limited to:
+        <ul style="list-style-type:circle;
+                   margin-left:0px;font-weight:bolder;">
+        <li>Software Testing, Fuzz Testing, Program Analysis and Software
+          Security</li>
+    </a> </p>
     {% endfor %}
     {% else %}
     {% for item in site.data.education.index %}
