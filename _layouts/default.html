@@ -1,14 +1,31 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="/academicons-1.9.2/css/academicons.min.css" />
-<html lang="{{ site.lang | default: " en-US" }}">
-{% include head.html %}
+---
+layout: compress
+---
 
-<body>
-  <div class="col-lg-8 mx-auto p-3 py-md-5">
-    {% include header.html %}
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
     {{ content }}
-    {% include footer.html %}
-  </div>
-</body>
 
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
 </html>
