@@ -23,7 +23,8 @@ redirect_from:
 - **Undergraduate Researcher at Information Security Lab, Sogang University**  
   - Jan. 2024 – Feb. 2026  
   - Advisor: Prof. Jaesung Choi  
-  - Conducted research on fuzz testing for Ethereum smart contracts, focusing on constraint-aware argument mutation. Implemented a novel fuzzer (IConFuzz) and demonstrated improved bug-finding effectiveness. Work submitted to ACM TOSEM and currently under review.
+  - Conducted research on fuzz testing for Ethereum smart contracts, focusing on constraint-aware argument mutation. Implemented a novel fuzzer (IConFuzz) and demonstrated improved bug-finding effectiveness. 
+  - Work submitted and currently under review.
 
 - **Internship at System Security Lab, Indiana University Bloomington**  
   - Feb. 2025 – Jun. 2025  

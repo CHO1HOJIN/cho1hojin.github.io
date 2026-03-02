@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I recently received my B.S. in Computer Science and Engineering from **Sogang University**, Seoul, Korea (Mar. 2020 - Feb. 2026). I worked at the [Information Security Lab](https://ccs.sogang.ac.kr/) under the supervision of Prof. Jaeseung Choi during my undergraduate studies.
+I recently received my B.S. in Computer Science and Engineering from **Sogang University**, Seoul, Korea (Mar. 2020 - Feb. 2026). I worked at the [Information Security Lab](https://islab-sogang.github.io/) under the supervision of Prof. Jaeseung Choi during my undergraduate studies.
 
 My research focuses on **program analysis** and **software security**, with a particular interest in automated testing and repair techniques for smart contracts. I am currently preparing for my next academic step (Ph.D. program TBD).
 

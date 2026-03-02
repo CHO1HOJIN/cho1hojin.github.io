@@ -24,9 +24,9 @@ repository               : "cho1hojin/cho1hojin.github.io"
 author:
   # Biographic information
   avatar           : "hojinchoi.jpg"
-  name             : "Hojin Choi"
+  name             : "Hojin Choi (최호진)"
   pronouns         : # example: "she/her"  
-  bio              : "Recent Graduate (B.S. Sogang Univ.)"
+  bio              : "B.S. Sogang Univ."
   location         : "Seoul, Korea"
   employer         : "Information Security Lab"
   uri              : # URL
