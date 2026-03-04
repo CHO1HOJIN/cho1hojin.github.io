@@ -49,12 +49,12 @@ layout: default
 
         {% if page.citation %}
           {% assign author_list = page.citation | split: '.' | first %}
-          {% assign author_list = author_list | replace: '**Hojin Choi**', '<span style="font-weight: bold;">Hojin Choi*</span>' %}
-          <p style="margin-bottom:0.2em;">{{ author_list | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          {% assign author_list = author_list | replace: '**Hojin Choi**', '<span class="citation__author-highlight">Hojin Choi*</span>' %}
+          <p class="citation__authors">{{ author_list | markdownify | remove: '<p>' | remove: '</p>' }}</p>
         {% endif %}
 
         {% if page.abstract %}
-          <div style="margin: 1em 0 1.5em 0; text-align: justify;">
+          <div class="paper-abstract">
             <strong>Abstract.</strong><br/>
             {{ page.abstract }}
           </div>
@@ -62,7 +62,7 @@ layout: default
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
         {% if page.paperurl %}
-          <p style="font-size: smaller;"><a href="{{ page.paperurl }}">Download Paper</a></p>
+          <p class="paper-download-link"><a href="{{ page.paperurl }}">Download Paper</a></p>
         {% endif %}
       </section>
 

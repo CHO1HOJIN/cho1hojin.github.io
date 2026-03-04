@@ -54,12 +54,12 @@
     
     {% if post.citation %}
       {% assign author_list = post.citation | split: '.' | first %}
-      {% assign author_list = author_list | replace: '**Hojin Choi**', '<span style="font-weight: bold;">Hojin Choi*</span>' %}
-      <p style="margin-bottom:0.2em;">{{ author_list | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      {% assign author_list = author_list | replace: '**Hojin Choi**', '<span class="citation__author-highlight">Hojin Choi*</span>' %}
+      <p class="citation__authors">{{ author_list | markdownify | remove: '<p>' | remove: '</p>' }}</p>
     {% endif %}
 
     {% if post.abstract %}
-      <div style="margin: 1em 0 1.5em 0; text-align: justify;">
+      <div class="paper-abstract">
         <strong>Abstract.</strong><br/>
         {{ post.abstract }}
       </div>

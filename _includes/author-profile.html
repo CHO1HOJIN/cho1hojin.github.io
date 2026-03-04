@@ -173,4 +173,24 @@
       {% endif %}      
     </ul>
   </div>
+
+  <nav class="author__nav" aria-label="Section navigation">
+    <ul class="author__nav-list">
+      {% for link in site.data.navigation.main %}
+        {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+        {% else %}
+          {% assign domain = base_path %}
+        {% endif %}
+        <li class="author__nav-item {% if page.url contains link.url and link.url != '/' %}is-active{% endif %}">
+          <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <button id="sidebar-theme-toggle" class="author__theme-toggle" type="button" aria-label="Toggle theme">
+    <i id="sidebar-theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
+    <span>Dark Mode (On/Off)</span>
+  </button>
 </div>

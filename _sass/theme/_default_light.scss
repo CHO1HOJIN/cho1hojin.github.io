@@ -3,6 +3,9 @@
     ========================================================================== */
 /* Color codes used for the theme */
 $primary-color              : #0f6f88;
+$secondary-color            : #b45d14;
+$secondary-color-strong     : #91470a;
+$secondary-color-soft       : #f6e3d3;
 $gray                       : #5f6d7c;
 $dark-gray                  : mix(#000, $gray, 55%);
 $darker-gray                : mix(#000, $gray, 72%);
@@ -29,6 +32,11 @@ $sidebar-screen-min-width   : 1024px;
 /* Default light theme for the site */
 :root {
     --global-base-color                 : #{$primary-color};
+    --accent-primary-color              : #{$primary-color};
+    --accent-primary-strong-color       : #0a5164;
+    --accent-secondary-color            : #{$secondary-color};
+    --accent-secondary-strong-color     : #{$secondary-color-strong};
+    --accent-secondary-soft-color       : #{$secondary-color-soft};
     --global-bg-color                   : #f5f8fc;
     --global-footer-bg-color            : #eef2f7;
     --global-border-color               : #d8e1eb;

@@ -16,6 +16,9 @@ $text                       : #e6edf7;
 $link                       : #67bfdc;
 $link-dark                  : #8ed4ea;
 $link-light                 : #9db2ff;
+$secondary                  : #f0a45f;
+$secondary-strong           : #ffbf86;
+$secondary-soft             : rgba(240, 164, 95, 0.2);
 
 /* Color codes used for the site */
 $danger-color               : #ee5f5b;
@@ -37,6 +40,11 @@ $sidebar-screen-min-width   : 1024px;
 /* Dark theme for the site */
 html[data-theme="dark"] {
     --global-base-color                 : #{$primary-color};
+    --accent-primary-color              : #{$primary-color};
+    --accent-primary-strong-color       : #{$link-dark};
+    --accent-secondary-color            : #{$secondary};
+    --accent-secondary-strong-color     : #{$secondary-strong};
+    --accent-secondary-soft-color       : #{$secondary-soft};
     --global-bg-color                   : #{$background};
     --global-footer-bg-color            : #0c141d;
     --global-border-color               : #2a394c;
