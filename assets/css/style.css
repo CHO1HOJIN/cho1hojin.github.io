@@ -10,12 +10,12 @@
 :root {
   --ml-font-display: "Source Serif 4", Georgia, serif;
   --ml-font-body: "Source Sans 3", system-ui, -apple-system, sans-serif;
-  --ml-color-maroon: #b45309;
-  --ml-color-maroon-dark: #92400e;
+  --ml-color-maroon: #2563eb;
+  --ml-color-maroon-dark: #1d4ed8;
   --ml-color-text: #1a1a1a;
   --ml-color-text-light: #555;
   --ml-color-text-lighter: #888;
-  --ml-color-bg: #fdfaf6;
+  --ml-color-bg: #f4f6f9;
   --ml-color-border: #e5e7eb;
   --ml-max-width: 1060px;
   --ml-content-padding: 1rem;
@@ -27,27 +27,27 @@
 /* Custom properties don't support !important in the value;
    this file loads after main.css so it wins the cascade. */
 html[data-theme="dark"] {
-  --global-bg-color:                  #fdfaf6;
-  --global-footer-bg-color:           #f7f3ee;
-  --global-border-color:              #e5e7eb;
-  --global-dark-border-color:         #d1d5db;
+  --global-bg-color:                  #f4f6f9;
+  --global-footer-bg-color:           #edf0f5;
+  --global-border-color:              #dde3ed;
+  --global-dark-border-color:         #c8d0de;
   --global-text-color:                #1a1a1a;
   --global-text-color-light:          #555555;
-  --global-link-color:                #b45309;
-  --global-link-color-hover:          #92400e;
-  --global-link-color-visited:        #a16207;
+  --global-link-color:                #e2eaf6;
+  --global-link-color-hover:          #60a5fa;
+  --global-link-color-visited:        #aab8cc;
   --global-masthead-link-color:       #444444;
-  --global-masthead-link-color-hover: #b45309;
-  --global-code-background-color:     #f3f0eb;
+  --global-masthead-link-color-hover: #2563eb;
+  --global-code-background-color:     #eef2fb;
   --global-code-text-color:           #1a1a1a;
-  --ui-surface-color:                 #fdfaf6;
-  --ui-surface-muted-color:           #f7f3ee;
-  --accent-primary-color:             #b45309;
+  --ui-surface-color:                 #f4f6f9;
+  --ui-surface-muted-color:           #edf0f5;
+  --accent-primary-color:             #2563eb;
 }
 
 /* ── Global overrides ──────────────────────────────────────────────────── */
 html, body {
-  background: #fdfaf6 !important;
+  background: #f4f6f9 !important;
   color: #1a1a1a !important;
 }
 
@@ -60,7 +60,7 @@ body {
 
 #main, .page, .page__content, .page__inner-wrap,
 .page__footer, footer {
-  background: #fdfaf6 !important;
+  background: #f4f6f9 !important;
   color: #1a1a1a !important;
 }
 
@@ -255,6 +255,25 @@ body:has(.bio-card) .page__inner-wrap {
   letter-spacing: -0.01em;
   color: var(--ml-color-text);
 }
+.bio-name .cv-download-link {
+  font-size: 0.78rem !important;
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+  padding: 0.25em 0.7em !important;
+  line-height: 1.4 !important;
+  opacity: 0.7;
+  border: 1px solid var(--global-border-color);
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  vertical-align: middle;
+}
+.bio-name .cv-download-link:hover {
+  opacity: 1 !important;
+  color: var(--global-text-color) !important;
+}
+
 .bio-name .korean-name {
   font-weight: 400;
   font-size: 1.05rem;
@@ -290,8 +309,8 @@ body:has(.bio-card) .page__inner-wrap {
   font-family: var(--ml-font-body);
 }
 .bio-text p { margin-bottom: 0.75rem; }
-.bio-text a { color: var(--ml-color-maroon); }
-.bio-text a:hover { color: var(--ml-color-maroon-dark); }
+.bio-text a { color: var(--ml-color-text); text-decoration: none; transition: color 0.15s; }
+.bio-text a:hover { color: var(--ml-color-maroon); }
 .bio-text strong { font-weight: 600; }
 
 .contact-info-block { font-size: 0.8rem; overflow-wrap: break-word; word-break: break-all; max-width: 200px; }
@@ -501,6 +520,14 @@ body:has(.bio-card) .page__inner-wrap {
   font-family: var(--ml-font-body);
   margin-bottom: 0.2rem;
   line-height: 1.4;
+}
+.pub-title a {
+  color: var(--ml-color-text) !important;
+  text-decoration: none !important;
+  transition: color 0.15s;
+}
+.pub-title a:hover {
+  color: #2563eb !important;
 }
 .pub-authors {
   font-size: 0.875rem;

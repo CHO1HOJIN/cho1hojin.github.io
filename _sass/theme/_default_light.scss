@@ -2,10 +2,10 @@
     DEFAULT THEME - LIGHT VERSION
     ========================================================================== */
 /* Color codes used for the theme */
-$primary-color              : #b45309;
-$secondary-color            : #92400e;
-$secondary-color-strong     : #78350f;
-$secondary-color-soft       : #fef3c7;
+$primary-color              : #2563eb;
+$secondary-color            : #1d4ed8;
+$secondary-color-strong     : #1d4ed8;
+$secondary-color-soft       : #dbeafe;
 $gray                       : #5f6d7c;
 $dark-gray                  : mix(#000, $gray, 55%);
 $darker-gray                : mix(#000, $gray, 72%);
@@ -37,23 +37,23 @@ $sidebar-screen-min-width   : 1024px;
     --accent-secondary-color            : #{$secondary-color};
     --accent-secondary-strong-color     : #{$secondary-color-strong};
     --accent-secondary-soft-color       : #{$secondary-color-soft};
-    --global-bg-color                   : #fdfaf6;
-    --global-footer-bg-color            : #f7f3ee;
-    --global-border-color               : #e8e0d5;
-    --global-dark-border-color          : #d6c9b8;
-    --global-code-background-color      : #f3f0eb;
+    --global-bg-color                   : #f4f6f9;
+    --global-footer-bg-color            : #edf0f5;
+    --global-border-color               : #dde3ed;
+    --global-dark-border-color          : #c8d0de;
+    --global-code-background-color      : #eef2fb;
     --global-code-text-color            : #{$darker-gray};
     --global-fig-caption-color          : #738195;
-    --global-link-color                 : #b45309;
-    --global-link-color-hover           : #92400e;
-    --global-link-color-visited         : #a16207;
+    --global-link-color                 : #{$darker-gray};
+    --global-link-color-hover           : #2563eb;
+    --global-link-color-visited         : #{$dark-gray};
     --global-masthead-link-color        : #{$dark-gray};
-    --global-masthead-link-color-hover  : #0a5164;
+    --global-masthead-link-color-hover  : #2563eb;
     --global-text-color                 : #{$dark-gray};
     --global-text-color-light           : #607285;
     --global-thead-color                : #e5ecf4;
-    --ui-surface-color                  : #fdfaf6;
-    --ui-surface-muted-color            : #f7f3ee;
+    --ui-surface-color                  : #f4f6f9;
+    --ui-surface-muted-color            : #edf0f5;
     --ui-elevated-shadow                : 0 10px 26px rgba(20, 43, 70, 0.08);
     --ui-hover-shadow                   : 0 18px 38px rgba(20, 43, 70, 0.14);
 }

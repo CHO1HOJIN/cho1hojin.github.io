@@ -3,22 +3,22 @@
     ========================================================================== */
 
 /* Color codes used for the theme */
-$primary-color              : #fbbf24;
+$primary-color              : #60a5fa;
 $gray                       : #768597;
 $dark-gray                  : mix(#000, $gray, 50%);
 $darker-gray                : mix(#000, $gray, 70%);
 $light-gray                 : mix(#fff, $gray, 40%);
 
-$background                 : #0f1620;
-$background-light           : #182332;
-$background-lighter         : #213043;
-$text                       : #e6edf7;
-$link                       : #fbbf24;
-$link-dark                  : #f59e0b;
-$link-light                 : #fde68a;
-$secondary                  : #d97706;
-$secondary-strong           : #b45309;
-$secondary-soft             : rgba(251, 191, 36, 0.15);
+$background                 : #0f1520;
+$background-light           : #172033;
+$background-lighter         : #1e2a40;
+$text                       : #e2eaf6;
+$link                       : #60a5fa;
+$link-dark                  : #93c5fd;
+$link-light                 : #bfdbfe;
+$secondary                  : #3b82f6;
+$secondary-strong           : #2563eb;
+$secondary-soft             : rgba(96, 165, 250, 0.15);
 
 /* Color codes used for the site */
 $danger-color               : #ee5f5b;
